@@ -9,6 +9,7 @@ body {
   height: 100%;
   font-family: "Poppins", Arial, sans-serif;
   height: 100%;
+  min-height: 660px;
 }
 body #container {
   position: absolute;
@@ -69,7 +70,7 @@ body #container form input {
 body #container form input::placeholder {
   color: #898989;
 }
-body #container form button {
+body #container form button.submit {
   background: #854dff;
   height: 85px;
   width: 85px;
@@ -80,13 +81,13 @@ body #container form button {
   right: 20px;
   top: 80px;
 }
-body #container form button svg {
+body #container form button.submit svg {
   transition: 0.2s;
 }
-body #container form button:hover {
+body #container form button.submit:hover {
   cursor: pointer;
 }
-body #container form button:hover svg {
+body #container form button.submit:hover svg {
   transform: rotate(-10deg);
 }
 body #container #result {
