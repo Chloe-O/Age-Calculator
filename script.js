@@ -12,6 +12,8 @@ let counter = 0;
 $(".submit").on("click", (e) => {
   let yearsAlive = currentYear - parseInt($("#year").val());
 
+  yearResult.text(yearsAlive);
+
   // for (let counter = 0; counter <= yearsAlive; counter++ ) {
   //   yearResult.text(counter);
   // };
