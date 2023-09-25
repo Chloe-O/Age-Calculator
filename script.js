@@ -10,6 +10,12 @@ let dayResult = $("#day-result p span");
 let counter = 0;
 
 $(".submit").on("click", (e) => {
+  if ($("#day").val() || $("#month").val() || $("#year").val()) {
+    console.log("empty");
+  } else {
+    console.log("not empty");
+  }
+
   let yearsAlive = currentYear - parseInt($("#year").val());
 
   yearResult.text(yearsAlive);
@@ -20,7 +26,3 @@ $(".submit").on("click", (e) => {
 
   e.preventDefault();
 });
-
-// function calculate() {
-
-// }
